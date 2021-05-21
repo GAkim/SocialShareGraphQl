@@ -1,0 +1,20 @@
+{
+    "name": "scandipwa/socialshare-graphql",
+    "description": "Social Share",
+    "version": "1.0.0",
+    "type": "magento2-module",
+    "support": {
+        "source": "https://github.com/scandipwa/",
+        "email": "info@scandiweb.com"
+    },
+    "authors": [
+        {
+            "name": "Akim Goncar",
+            "email": "akim@scandiweb.com"
+        }
+    ],
+    "license": [
+      "OSL-3.0",
+      "AFL-3.0"
+    ]
+}
