@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <social_share>
+            <general>
+                <enable>0</enable>
+                <rounded>1</rounded>
+                <size>35</size>
+                <home_page>0</home_page>
+                <category_page>0</category_page>
+                <product_page>1</product_page>
+            </general>
+            <facebook>
+                <enable>0</enable>
+                <enable_counter>0</enable_counter>
+            </facebook>
+            <facebook_messenger>
+                <enable>0</enable>
+            </facebook_messenger>
+            <telegram>
+                <enable>0</enable>
+            </telegram>
+            <whatsapp>
+                <enable>0</enable>
+            </whatsapp>
+            <linkedin>
+                <enable>0</enable>
+            </linkedin>
+            <email>
+                <enable>0</enable>
+                <suffix>ScandiPWA</suffix>
+            </email>
+        </social_share>
+    </default>
+</config>

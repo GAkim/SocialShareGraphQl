@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<include xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_include.xsd">
+    <section id="social_share" translate="label" type="text" sortOrder="1000" showInDefault="1" showInWebsite="0" showInStore="0">
+        <label>Social Share</label>
+        <tab>scandipwa</tab>
+        <resource>ScandiPWA_SocialShareGrpahQl::social_share</resource>
+<!--        General-->
+        <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>General Settings</label>
+            <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Enable</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="rounded" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Rounded Icons</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="size" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Icon Size</label>
+                <comment>in pixel's</comment>
+            </field>
+
+            <field id="home_page" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Display On HomePage</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="category_page" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Display On Product Page</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="product_page" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Display On Category Page</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+        </group>
+<!--        FaceBook-->
+        <group id="facebook" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Facebook</label>
+            <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Enable Facebook</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="enable_counter" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Enable Facebook Counter</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+        </group>
+<!--        Facebook Messenger-->
+        <group id="facebook_messenger" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Facebook Messenger</label>
+            <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Enable Facebook Messenger</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+
+            <field id="app_id" translate="text" type="text" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Facebook Messenger App ID</label>
+            </field>
+        </group>
+<!--        Telegram-->
+        <group id="telegram" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Telegram</label>
+            <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Enable Telegram</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+        </group>
+<!--        WhatsApp-->
+        <group id="whatsapp" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>WhatsApp</label>
+            <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Enable WhatsApp</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+        </group>
+<!--        LinkedIn-->
+        <group id="linkedin" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>LinkedIn</label>
+            <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Enable LinkedIn</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+        </group>
+<!--        Email-->
+        <group id="email" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Email</label>
+            <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Enable Email</label>
+                <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+            <field id="suffix" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Email Subject Suffix</label>
+            </field>
+        </group>
+    </section>
+</include>
