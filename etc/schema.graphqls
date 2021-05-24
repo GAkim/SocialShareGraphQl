@@ -1,0 +1,7 @@
+type Query {
+    socialShare: socialShareType @resolver(class:"\\ScandiPWA\\SocialShareGraphQl\\Model\\Resolver\\SocialShare")
+}
+
+type socialShareType {
+    enabled: String
+}
