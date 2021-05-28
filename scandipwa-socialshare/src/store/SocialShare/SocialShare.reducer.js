@@ -3,7 +3,13 @@ import { UPDATE_SOCIAL_SHARE } from './SocialShare.action';
 /** @namespace ScandipwaSocialshare/Store/SocialShare/Reducer/getInitialState */
 export const getInitialState = () => ({
     socialShare: {
-        enabled: 'not'
+        socialShareConfig: {
+            enabled: false,
+            categoryPage: false,
+            productPage: false,
+            homePage: false
+        },
+        providers: []
     }
 });
 

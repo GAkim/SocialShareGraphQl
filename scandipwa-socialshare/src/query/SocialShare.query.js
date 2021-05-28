@@ -4,7 +4,37 @@ import { Field } from 'Util/Query';
 export class SocialShareQuery {
     getQuery() {
         return new Field('socialShare')
-            .addFieldList(['enabled']);
+            .addField(this.getConfigField())
+            .addField(this.getProviderField())
+    }
+
+    getConfigField() {
+        return new Field('socialShareConfig')
+            .addFieldList(this.getConfigFields());
+    }
+
+    getConfigFields() {
+        return [
+            'enabled',
+            'rounded',
+            'size',
+            'categoryPage',
+            'productPage',
+            'homePage'
+        ];
+    }
+
+    getProviderField() {
+        return new Field('providers')
+            .addFieldList(this.getProviderFields());
+    }
+
+    getProviderFields() {
+        return [
+            'id',
+            'counter',
+            'additional'
+        ];
     }
 }
 
