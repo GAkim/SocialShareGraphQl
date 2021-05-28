@@ -3,5 +3,21 @@ type Query {
 }
 
 type socialShareType {
-    enabled: String
+    socialShareConfig: socialShareConfig
+    providers: [ socialShareProvider ]
+}
+
+type socialShareConfig {
+    enabled: Boolean
+    rounded: Boolean
+    size: String
+    categoryPage: Boolean
+    productPage: Boolean
+    homePage: Boolean
+}
+
+type socialShareProvider {
+    id: String
+    counter: Boolean
+    additional: String
 }

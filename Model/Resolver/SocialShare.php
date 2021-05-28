@@ -6,16 +6,29 @@ namespace ScandiPWA\SocialShareGraphQl\Model\Resolver;
 
 use Magento\Framework\GraphQl\Config\Element\Field;
 use Magento\Framework\GraphQl\Query\Resolver\ContextInterface;
-use Magento\Framework\GraphQl\Query\Resolver\Value;
 use Magento\Framework\GraphQl\Query\ResolverInterface;
 use Magento\Framework\GraphQl\Schema\Type\ResolveInfo;
-use Magento\Framework\App\Config\ScopeConfigInterface;
+use ScandiPWA\SocialShareGraphQl\Helper\DataProvider;
 
 /**
  * @package ScandiPWA\SocialShareGraphQl\Model\Resolver
  */
 class SocialShare implements ResolverInterface
 {
+    /**
+     * @var DataProvider
+     */
+    protected $dataProvider;
+
+    /**
+     * SocialShare constructor.
+     * @param DataProvider $dataProvider
+     */
+    public function __construct(
+        DataProvider $dataProvider
+    ) {
+        $this->dataProvider = $dataProvider;
+    }
     /**
      * @param Field $field
      * @param ContextInterface $context
@@ -27,7 +40,8 @@ class SocialShare implements ResolverInterface
     public function resolve(Field $field, $context, ResolveInfo $info, array $value = null, array $args = null)
     {
         $result = [
-            'enabled' => 'works'
+            'socialShareConfig' => $this->dataProvider->getSocialShareConfig(),
+            'providers' => $this->dataProvider->getSocialShareProviders()
         ];
 
         return $result;
