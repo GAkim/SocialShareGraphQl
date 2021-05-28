@@ -1,4 +1,4 @@
-import {Field} from 'Util/Query';
+import { Field } from 'Util/Query';
 
 /** @namespace ScandipwaSocialshare/Query/SocialShare/Query/SocialShareQuery */
 export class SocialShareQuery {
