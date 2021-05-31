@@ -37,7 +37,7 @@ const renderSocialShare = (props) => {
                     rounded={ rounded }
                     size={ size }
                     providers={ providers }
-                    product={ name }
+                    quote={ name }
                 />
             </Suspense>
         </section>
