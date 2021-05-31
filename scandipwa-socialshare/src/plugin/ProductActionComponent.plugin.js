@@ -18,7 +18,8 @@ const renderSocialShare = (props) => {
             socialShareConfig: {
                 enabled, productPage, rounded, size
             }, providers
-        }
+        },
+        product: { name }
     } = props;
 
     if (!enabled && !productPage) {
@@ -36,6 +37,7 @@ const renderSocialShare = (props) => {
                     rounded={ rounded }
                     size={ size }
                     providers={ providers }
+                    product={ name }
                 />
             </Suspense>
         </section>
