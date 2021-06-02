@@ -3,7 +3,7 @@ import { lazy, Suspense } from 'react';
 export const SocialShare = lazy(() => import(
     /* webpackMode: "lazy", webpackChunkName: "social-share" */
     '../component/SocialShare'
-    ));
+));
 
 const renderShortDescription = (args, callback, instance) => (
     <>
@@ -28,16 +28,16 @@ const renderSocialShare = (props) => {
 
     return (
         <section
-            block="ProductActions"
-            elem="Section"
-            mods={ { type: 'social' } }
+          block="ProductActions"
+          elem="Section"
+          mods={ { type: 'social' } }
         >
             <Suspense fallback={ null }>
                 <SocialShare
-                    rounded={ rounded }
-                    size={ size }
-                    providers={ providers }
-                    quote={ name }
+                  isRounded={ rounded }
+                  size={ size }
+                  providers={ providers }
+                  quote={ name }
                 />
             </Suspense>
         </section>
