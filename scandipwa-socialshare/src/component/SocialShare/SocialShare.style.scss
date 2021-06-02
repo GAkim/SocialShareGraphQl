@@ -8,3 +8,14 @@
         margin-right: 10px;
     }
 }
+
+.CategoryPage {
+    &-LayoutButtons {
+        margin-bottom: 10px;
+        min-width: 100px;
+    }
+
+    &-Miscellaneous {
+        grid-template-columns: unset;
+    }
+}
