@@ -8,7 +8,7 @@ const mapStateToProps = (args, callback, instance) => {
 };
 
 export default {
-    'Route/CategoryPage/Container/mapStateToProps': {
+    'Component/ProductActions/Container/mapStateToProps': {
         function: mapStateToProps
     }
 };
