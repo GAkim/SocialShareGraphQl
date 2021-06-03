@@ -169,6 +169,7 @@ export class SocialShareComponent extends PureComponent {
     }
 
     renderProvider(provider) {
+        const shareUrl = window.location.href;
         const { id, counter, additional } = provider;
         const { render } = this.renderMap[id];
 
