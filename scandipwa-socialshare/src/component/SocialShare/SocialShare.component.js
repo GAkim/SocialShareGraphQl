@@ -8,10 +8,10 @@ import {
     FacebookMessengerShareButton,
     FacebookShareButton,
     FacebookShareCount,
-    LinkedinIcon,
-    LinkedinShareButton,
     TelegramIcon,
     TelegramShareButton,
+    TwitterIcon,
+    TwitterShareButton,
     WhatsappIcon,
     WhatsappShareButton
 } from 'react-share';
@@ -20,8 +20,8 @@ import {
     EMAIL,
     FACEBOOK,
     FACEBOOK_MSG,
-    LINKEDIN,
     TELEGRAM,
+    TWITTER,
     WHATSAPP
 } from './SocialShare.config';
 
@@ -52,23 +52,24 @@ export class SocialShareComponent extends PureComponent {
         [WHATSAPP]: {
             render: (counter, additional, shareUrl) => this.renderWhatsApp(counter, additional, shareUrl)
         },
-        [LINKEDIN]: {
-            render: (counter, additional, shareUrl) => this.renderLinkedIn(counter, additional, shareUrl)
+        [TWITTER]: {
+            render: (counter, additional, shareUrl) => this.renderTwitter(counter, additional, shareUrl)
         }
     };
 
-    renderLinkedIn(counter, additional, shareUrl) {
-        const { size, isRounded } = this.props;
+    renderTwitter(counter, additional, shareUrl) {
+        const { size, isRounded, quote } = this.props;
 
         return (
-            <LinkedinShareButton
-              url={ shareUrl }
+            <TwitterShareButton
+                url={ shareUrl }
+                title={ quote }
             >
-                <LinkedinIcon
-                  size={ size }
-                  round={ isRounded }
+                <TwitterIcon
+                    size={ size }
+                    round={ isRounded }
                 />
-            </LinkedinShareButton>
+            </TwitterShareButton>
         );
     }
 
@@ -78,12 +79,12 @@ export class SocialShareComponent extends PureComponent {
         return (
             <>
                 <FacebookShareButton
-                  url={ shareUrl }
-                  quote={ quote }
+                    url={ shareUrl }
+                    quote={ quote }
                 >
                     <FacebookIcon
-                      size={ size }
-                      round={ isRounded }
+                        size={ size }
+                        round={ isRounded }
                     />
                 </FacebookShareButton>
                 { this.renderFaceBookCounter(counter, shareUrl) }
@@ -96,12 +97,12 @@ export class SocialShareComponent extends PureComponent {
 
         return (
             <FacebookMessengerShareButton
-              url={ shareUrl }
-              appId={ additional }
+                url={ shareUrl }
+                appId={ additional }
             >
                 <FacebookMessengerIcon
-                  size={ size }
-                  round={ isRounded }
+                    size={ size }
+                    round={ isRounded }
                 />
             </FacebookMessengerShareButton>
         );
@@ -112,12 +113,12 @@ export class SocialShareComponent extends PureComponent {
 
         return (
             <TelegramShareButton
-              url={ shareUrl }
-              title={ quote }
+                url={ shareUrl }
+                title={ quote }
             >
                 <TelegramIcon
-                  size={ size }
-                  round={ isRounded }
+                    size={ size }
+                    round={ isRounded }
                 />
             </TelegramShareButton>
         );
@@ -128,13 +129,13 @@ export class SocialShareComponent extends PureComponent {
 
         return (
             <WhatsappShareButton
-              url={ shareUrl }
-              title={ quote }
-              separator=" | "
+                url={ shareUrl }
+                title={ quote }
+                separator=" | "
             >
                 <WhatsappIcon
-                  size={ size }
-                  round={ isRounded }
+                    size={ size }
+                    round={ isRounded }
                 />
             </WhatsappShareButton>
         );
@@ -159,8 +160,8 @@ export class SocialShareComponent extends PureComponent {
 
         return (
             <EmailShareButton
-              url={ shareUrl }
-              subject={ `${additional} | ${quote}` }
+                url={ shareUrl }
+                subject={ `${additional} | ${quote}` }
             >
                 <EmailIcon size={ size } round={ isRounded } />
             </EmailShareButton>
@@ -168,7 +169,6 @@ export class SocialShareComponent extends PureComponent {
     }
 
     renderProvider(provider) {
-        const shareUrl = window.location.href;
         const { id, counter, additional } = provider;
         const { render } = this.renderMap[id];
 

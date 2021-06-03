@@ -40,7 +40,7 @@ class DataProvider
         'facebook_messenger',
         'telegram',
         'whatsapp',
-        'linkedin',
+        'twitter',
         'email',
     ];
 

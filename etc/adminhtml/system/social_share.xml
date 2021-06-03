@@ -78,11 +78,11 @@
                 <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
             </field>
         </group>
-<!--        LinkedIn-->
-        <group id="linkedin" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
-            <label>LinkedIn</label>
+<!--        Twitter-->
+        <group id="twitter" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Twitter</label>
             <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
-                <label>Enable LinkedIn</label>
+                <label>Enable Twitter</label>
                 <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
             </field>
         </group>

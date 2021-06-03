@@ -23,9 +23,9 @@
             <whatsapp>
                 <enable>0</enable>
             </whatsapp>
-            <linkedin>
+            <twitter>
                 <enable>0</enable>
-            </linkedin>
+            </twitter>
             <email>
                 <enable>0</enable>
                 <suffix>ScandiPWA</suffix>
