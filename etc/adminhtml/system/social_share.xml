@@ -29,12 +29,12 @@
             </field>
 
             <field id="category_page" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="0" showInStore="0">
-                <label>Display On Product Page</label>
+                <label>Display On Category Page</label>
                 <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
             </field>
 
             <field id="product_page" translate="label" type="select" sortOrder="6" showInDefault="1" showInWebsite="0" showInStore="0">
-                <label>Display On Category Page</label>
+                <label>Display On Product Page</label>
                 <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
             </field>
         </group>

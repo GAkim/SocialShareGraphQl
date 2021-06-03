@@ -36,7 +36,7 @@ const renderSocialShare = (props, isVisibleOnMobile) => {
         return null;
     }
 
-    if (!enabled && !categoryPage) {
+    if (!enabled || !categoryPage) {
         return null;
     }
 

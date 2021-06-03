@@ -22,8 +22,8 @@ const renderSocialShare = (props) => {
         product: { name }
     } = props;
 
-    if (!enabled && !productPage) {
-        return false;
+    if (!enabled || !productPage) {
+        return null;
     }
 
     return (
