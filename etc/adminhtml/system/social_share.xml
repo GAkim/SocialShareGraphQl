@@ -24,6 +24,7 @@
 
             <field id="home_page" translate="label" type="select" sortOrder="4" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Display On HomePage</label>
+                <comment>Not Supported.</comment>
                 <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
             </field>
 
@@ -47,12 +48,14 @@
 
             <field id="enable_counter" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Enable Facebook Counter</label>
+                <comment>https://www.npmjs.com/package/react-share 4.4.0 Buged, waiting for update</comment>
                 <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
             </field>
         </group>
 <!--        Facebook Messenger-->
         <group id="facebook_messenger" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
             <label>Facebook Messenger</label>
+            <comment>Not Working on mobile devices waiting for Update https://github.com/nygardk/react-share/pull/357</comment>
             <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Enable Facebook Messenger</label>
                 <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
