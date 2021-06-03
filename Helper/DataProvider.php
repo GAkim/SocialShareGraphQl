@@ -19,11 +19,11 @@ class DataProvider
 
     const SIZE = 'size';
 
-    const HOME_PAGE = 'homepage';
+    const HOME_PAGE = 'home_page';
 
-    const CATEGORY_PAGE = 'categorypage';
+    const CATEGORY_PAGE = 'category_page';
 
-    const PRODUCT_PAGE = 'productpage';
+    const PRODUCT_PAGE = 'product_page';
 
     const COUNTER = 'enable_counter';
 
