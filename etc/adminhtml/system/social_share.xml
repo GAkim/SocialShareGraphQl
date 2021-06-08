@@ -3,7 +3,7 @@
     <section id="socialshare" translate="label" type="text" sortOrder="1000" showInDefault="1" showInWebsite="0" showInStore="0">
         <label>Social Share</label>
         <tab>scandipwa</tab>
-        <resource>ScandiPWA_SocialShareGrpahQl::social_share</resource>
+        <resource>ScandiPWA_SocialShareGraphQl::social_share</resource>
 <!--        General-->
         <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
             <label>General Settings</label>
